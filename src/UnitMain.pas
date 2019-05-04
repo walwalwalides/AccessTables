@@ -115,7 +115,9 @@ implementation
 uses Unit2, Unit3, UnitExcel, UnitBlob, UnitDDLsamples;
 
 {$R *.dfm}
-const tablemode : integer=-1; //0=accesstable  1=Excel sheet
+var
+ tablemode : integer=-1; //0=accesstable  1=Excel sheet 
+
 procedure FixDBGridColumnsWidth(const DBGrid: TDBGrid);
 var i : integer;
 begin
